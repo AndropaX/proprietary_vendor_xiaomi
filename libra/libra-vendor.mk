@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/xiaomi/libra/proprietary/bin/location-mq:system/bin/location-mq \
     vendor/xiaomi/libra/proprietary/bin/loc_launcher:system/bin/loc_launcher \
+    vendor/xiaomi/libra/proprietary/bin/lowi-server:system/bin/lowi-server \
     vendor/xiaomi/libra/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
     vendor/xiaomi/libra/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/xiaomi/libra/proprietary/bin/nl_listener:system/bin/nl_listener \
@@ -43,6 +44,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
     vendor/xiaomi/libra/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/xiaomi/libra/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
+    vendor/xiaomi/libra/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
+    vendor/xiaomi/libra/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/xiaomi/libra/proprietary/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb:system/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb \
     vendor/xiaomi/libra/proprietary/etc/acdbdata/Forte/Forte_General_cal.acdb:system/etc/acdbdata/Forte/Forte_General_cal.acdb \
     vendor/xiaomi/libra/proprietary/etc/acdbdata/Forte/Forte_Global_cal.acdb:system/etc/acdbdata/Forte/Forte_Global_cal.acdb \
@@ -67,24 +70,32 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:system/etc/sysconfig/whitelist_com.android.omadm.service.xml \
     vendor/xiaomi/libra/proprietary/lib64/hw/consumerir.msm8992.so:system/lib64/hw/consumerir.msm8992.so \
     vendor/xiaomi/libra/proprietary/lib64/hw/fingerprint.libra.so:system/lib64/hw/fingerprint.libra.so \
+    vendor/xiaomi/libra/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
     vendor/xiaomi/libra/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
+    vendor/xiaomi/libra/proprietary/lib64/libgps.utils.so:system/lib64/libgps.utils.so \
     vendor/xiaomi/libra/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/xiaomi/libra/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/xiaomi/libra/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
+    vendor/xiaomi/libra/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so \
     vendor/xiaomi/libra/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
+    vendor/xiaomi/libra/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
     vendor/xiaomi/libra/proprietary/lib64/libqti-iop.so:system/lib64/libqti-iop.so \
     vendor/xiaomi/libra/proprietary/lib/hw/camera.vendor.msm8992.so:system/lib/hw/camera.vendor.msm8992.so \
     vendor/xiaomi/libra/proprietary/lib/hw/consumerir.msm8992.so:system/lib/hw/consumerir.msm8992.so \
     vendor/xiaomi/libra/proprietary/lib/hw/fingerprint.libra.so:system/lib/hw/fingerprint.libra.so \
+    vendor/xiaomi/libra/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/xiaomi/libra/proprietary/lib/hw/local_time.default.so:system/lib/hw/local_time.default.so \
     vendor/xiaomi/libra/proprietary/lib/libDiracAPI_SHARED.so:system/lib/libDiracAPI_SHARED.so \
     vendor/xiaomi/libra/proprietary/lib/libdmengine.so:system/lib/libdmengine.so \
     vendor/xiaomi/libra/proprietary/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
+    vendor/xiaomi/libra/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/xiaomi/libra/proprietary/lib/lib_fpc_tac_shared.so:system/lib/lib_fpc_tac_shared.so \
     vendor/xiaomi/libra/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/xiaomi/libra/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/xiaomi/libra/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+    vendor/xiaomi/libra/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/xiaomi/libra/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
+    vendor/xiaomi/libra/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/xiaomi/libra/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/xiaomi/libra/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/xiaomi/libra/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
@@ -144,6 +155,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libEGL_adreno.so:system/vendor/lib64/libEGL_adreno.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libfrsdk.so:system/vendor/lib64/libfrsdk.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libhubconnection.so:system/vendor/lib64/libhubconnection.so \
@@ -165,6 +177,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libkmcrypto.so:system/vendor/lib64/libkmcrypto.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/liblistensoundmodel2.so:system/vendor/lib64/liblistensoundmodel2.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib64/libloc_ext.so:system/vendor/lib64/libloc_ext.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/liblowi_wifihal_nl.so:system/vendor/lib64/liblowi_wifihal_nl.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/liblowi_wifihal.so:system/vendor/lib64/liblowi_wifihal.so \
@@ -211,6 +226,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libTimeService.so:system/vendor/lib64/libTimeService.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libtzdrmgenprov.so:system/vendor/lib64/libtzdrmgenprov.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libvcel.so:system/vendor/lib64/libvcel.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libvss_nv_core.so:system/vendor/lib64/libvss_nv_core.so \
@@ -218,10 +234,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libvss_nv_iface.so:system/vendor/lib64/libvss_nv_iface.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libwms.so:system/vendor/lib64/libwms.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib64/libxt_native.so:system/vendor/lib64/libxt_native.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/hw/activity_recognition.libra.so:system/vendor/lib/hw/activity_recognition.libra.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/hw/gatekeeper.msm8992.so:system/vendor/lib/hw/gatekeeper.msm8992.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/hw/sound_trigger.primary.msm8992.so:system/vendor/lib/hw/sound_trigger.primary.msm8992.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/hw/tof.vl6180.so:system/vendor/lib/hw/tof.vl6180.so \
@@ -404,7 +424,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libflash_i2c.so:system/vendor/lib/libflash_i2c.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libfrsdk.so:system/vendor/lib/libfrsdk.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libgoog_eis_armeabi-v7a.so:system/vendor/lib/libgoog_eis_armeabi-v7a.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libgoog_rownr.so:system/vendor/lib/libgoog_rownr.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libhubconnection.so:system/vendor/lib/libhubconnection.so \
@@ -423,11 +445,19 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib/lib-imss.so:system/vendor/lib/lib-imss.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/lib-imsvt.so:system/vendor/lib/lib-imsvt.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libkmcrypto.so:system/vendor/lib/libkmcrypto.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/liblistensoundmodel2.so:system/vendor/lib/liblistensoundmodel2.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/liblowi_wifihal.so:system/vendor/lib/liblowi_wifihal.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/liblowi_wifihal_nl.so:system/vendor/lib/liblowi_wifihal_nl.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libmdsprpc.so:system/vendor/lib/libmdsprpc.so \
@@ -545,6 +575,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libqti-iop-client.so:system/vendor/lib/libqti-iop-client.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/lib-rcsimssjni.so:system/vendor/lib/lib-rcsimssjni.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/lib-rcsjni.so:system/vendor/lib/lib-rcsjni.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
@@ -568,6 +599,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libvss_nv_core.so:system/vendor/lib/libvss_nv_core.so \
@@ -578,6 +610,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/rfsa/adsp/fastrpc_shell_0:system/vendor/lib/rfsa/adsp/fastrpc_shell_0 \
