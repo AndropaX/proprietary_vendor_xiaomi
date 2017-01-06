@@ -60,6 +60,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/etc/flp.conf:system/etc/flp.conf \
     vendor/xiaomi/libra/proprietary/etc/izat.conf:system/etc/izat.conf \
     vendor/xiaomi/libra/proprietary/etc/lowi.conf:system/etc/lowi.conf \
+    vendor/xiaomi/libra/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
     vendor/xiaomi/libra/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/xiaomi/libra/proprietary/etc/permissions/com.android.omadm.service.xml:system/etc/permissions/com.android.omadm.service.xml \
     vendor/xiaomi/libra/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
