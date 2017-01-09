@@ -20,6 +20,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/bin/cnd:system/bin/cnd \
     vendor/xiaomi/libra/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
     vendor/xiaomi/libra/proprietary/bin/energy-awareness:system/bin/energy-awareness \
+    vendor/xiaomi/libra/proprietary/bin/garden_app:system/bin/garden_app \
+    vendor/xiaomi/libra/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon \
     vendor/xiaomi/libra/proprietary/bin/imscmservice:system/bin/imscmservice \
     vendor/xiaomi/libra/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/xiaomi/libra/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
