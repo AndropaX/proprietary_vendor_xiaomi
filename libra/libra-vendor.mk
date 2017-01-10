@@ -29,7 +29,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/bin/iop:system/bin/iop \
     vendor/xiaomi/libra/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/xiaomi/libra/proprietary/bin/irsc_util:system/bin/irsc_util \
-    vendor/xiaomi/libra/proprietary/bin/location-mq:system/bin/location-mq \
     vendor/xiaomi/libra/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/xiaomi/libra/proprietary/bin/lowi-server:system/bin/lowi-server \
     vendor/xiaomi/libra/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
