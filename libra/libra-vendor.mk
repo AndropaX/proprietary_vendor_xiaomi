@@ -155,6 +155,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libadiertac.so:system/vendor/lib64/libadiertac.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libalarmservice_jni.so:system/vendor/lib64/libalarmservice_jni.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib64/libasn1cper.so:system/vendor/lib64/libasn1cper.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib64/libasn1crt.so:system/vendor/lib64/libasn1crt.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib64/libasn1crtx.so:system/vendor/lib64/libasn1crtx.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libaudioalsa.so:system/vendor/lib64/libaudioalsa.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
@@ -173,6 +176,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libEGL_adreno.so:system/vendor/lib64/libEGL_adreno.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libfrsdk.so:system/vendor/lib64/libfrsdk.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib64/libgdtap.so:system/vendor/lib64/libgdtap.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libhubconnection.so:system/vendor/lib64/libhubconnection.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
@@ -300,6 +304,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib/libadpcmdec.so:system/vendor/lib/libadpcmdec.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/libasn1cper.so:system/vendor/lib/libasn1cper.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/libasn1crt.so:system/vendor/lib/libasn1crt.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/libasn1crtx.so:system/vendor/lib/libasn1crtx.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libarcsoft_beauty_shot.so:system/vendor/lib/libarcsoft_beauty_shot.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
@@ -446,6 +453,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libfrsdk.so:system/vendor/lib/libfrsdk.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/libgdtap.so:system/vendor/lib/libgdtap.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libgoog_eis_armeabi-v7a.so:system/vendor/lib/libgoog_eis_armeabi-v7a.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libgoog_rownr.so:system/vendor/lib/libgoog_rownr.so \
