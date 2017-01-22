@@ -59,12 +59,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/xiaomi/libra/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
     vendor/xiaomi/libra/proprietary/etc/cacert_location.pem:system/etc/cacert_location.pem \
-    vendor/xiaomi/libra/proprietary/etc/flp.conf:system/etc/flp.conf \
     vendor/xiaomi/libra/proprietary/etc/gps_diag.cfg:system/etc/gps_diag.cfg \
-    vendor/xiaomi/libra/proprietary/etc/izat.conf:system/etc/izat.conf \
-    vendor/xiaomi/libra/proprietary/etc/lowi.conf:system/etc/lowi.conf \
     vendor/xiaomi/libra/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
-    vendor/xiaomi/libra/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
     vendor/xiaomi/libra/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/xiaomi/libra/proprietary/etc/permissions/com.android.omadm.service.xml:system/etc/permissions/com.android.omadm.service.xml \
     vendor/xiaomi/libra/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
@@ -76,7 +72,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/xiaomi/libra/proprietary/etc/permissions/rcsservice.xml:system/etc/permissions/rcsservice.xml \
     vendor/xiaomi/libra/proprietary/etc/qcril.db:system/etc/qcril.db \
-    vendor/xiaomi/libra/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/xiaomi/libra/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:system/etc/sysconfig/whitelist_com.android.omadm.service.xml \
     vendor/xiaomi/libra/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/xiaomi/libra/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
@@ -84,32 +79,20 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/xiaomi/libra/proprietary/lib64/hw/consumerir.msm8992.so:system/lib64/hw/consumerir.msm8992.so \
     vendor/xiaomi/libra/proprietary/lib64/hw/fingerprint.libra.so:system/lib64/hw/fingerprint.libra.so \
-    vendor/xiaomi/libra/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
     vendor/xiaomi/libra/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
-    vendor/xiaomi/libra/proprietary/lib64/libgps.utils.so:system/lib64/libgps.utils.so \
     vendor/xiaomi/libra/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/xiaomi/libra/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
-    vendor/xiaomi/libra/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
-    vendor/xiaomi/libra/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so \
-    vendor/xiaomi/libra/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
-    vendor/xiaomi/libra/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
     vendor/xiaomi/libra/proprietary/lib64/libqti-iop.so:system/lib64/libqti-iop.so \
     vendor/xiaomi/libra/proprietary/lib/hw/camera.vendor.msm8992.so:system/lib/hw/camera.vendor.msm8992.so \
     vendor/xiaomi/libra/proprietary/lib/hw/consumerir.msm8992.so:system/lib/hw/consumerir.msm8992.so \
     vendor/xiaomi/libra/proprietary/lib/hw/fingerprint.libra.so:system/lib/hw/fingerprint.libra.so \
-    vendor/xiaomi/libra/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/xiaomi/libra/proprietary/lib/hw/local_time.default.so:system/lib/hw/local_time.default.so \
     vendor/xiaomi/libra/proprietary/lib/libDiracAPI_SHARED.so:system/lib/libDiracAPI_SHARED.so \
     vendor/xiaomi/libra/proprietary/lib/libdmengine.so:system/lib/libdmengine.so \
     vendor/xiaomi/libra/proprietary/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
-    vendor/xiaomi/libra/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/xiaomi/libra/proprietary/lib/lib_fpc_tac_shared.so:system/lib/lib_fpc_tac_shared.so \
     vendor/xiaomi/libra/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/xiaomi/libra/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
-    vendor/xiaomi/libra/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/xiaomi/libra/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
-    vendor/xiaomi/libra/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    vendor/xiaomi/libra/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/xiaomi/libra/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/xiaomi/libra/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/xiaomi/libra/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
@@ -653,6 +636,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
 
 PRODUCT_PACKAGES += \
+    libloc_api_v02 \
+    libloc_ds_api \
     libqminvapi \
     libtime_genoff \
     atfwd \
