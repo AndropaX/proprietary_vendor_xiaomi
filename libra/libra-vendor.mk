@@ -53,6 +53,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/bin/tftp_server:system/bin/tftp_server \
     vendor/xiaomi/libra/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/xiaomi/libra/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
+    vendor/xiaomi/libra/proprietary/bin/wdsdaemon:system/bin/wdsdaemon \
     vendor/xiaomi/libra/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
     vendor/xiaomi/libra/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/xiaomi/libra/proprietary/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb:system/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb \
@@ -140,6 +141,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/lib64/libmorpho_memory_allocator.so:system/lib64/libmorpho_memory_allocator.so \
     vendor/xiaomi/libra/proprietary/lib64/libmorpho_panorama.so:system/lib64/libmorpho_panorama.so \
     vendor/xiaomi/libra/proprietary/lib64/libqti-iop.so:system/lib64/libqti-iop.so \
+    vendor/xiaomi/libra/proprietary/lib64/libstagefright_soft_ffmpegadec.so:system/lib64/libstagefright_soft_ffmpegadec.so \
+    vendor/xiaomi/libra/proprietary/lib64/libstagefright_soft_flacdec.so:system/lib64/libstagefright_soft_flacdec.so \
     vendor/xiaomi/libra/proprietary/lib/hw/activity_recognition.msm8994.so:system/lib/hw/activity_recognition.msm8994.so \
     vendor/xiaomi/libra/proprietary/lib/hw/camera.vendor.msm8992.so:system/lib/hw/camera.vendor.msm8992.so \
     vendor/xiaomi/libra/proprietary/lib/hw/consumerir.msm8992.so:system/lib/hw/consumerir.msm8992.so \
@@ -154,6 +157,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/lib/libmorpho_panorama.so:system/lib/libmorpho_panorama.so \
     vendor/xiaomi/libra/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/xiaomi/libra/proprietary/lib/libqti-iop.so:system/lib/libqti-iop.so \
+    vendor/xiaomi/libra/proprietary/lib/libstagefright_soft_ffmpegadec.so:system/lib/libstagefright_soft_ffmpegadec.so \
+    vendor/xiaomi/libra/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
     vendor/xiaomi/libra/proprietary/lib/soundfx/libdirac.so:system/lib/soundfx/libdirac.so \
     vendor/xiaomi/libra/proprietary/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
     vendor/xiaomi/libra/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
@@ -250,6 +255,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libmmcamera2_q3a_core.so:system/vendor/lib64/libmmcamera2_q3a_core.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libmmcamera2_sensor_debug.so:system/vendor/lib64/libmmcamera2_sensor_debug.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libmmcamera2_stats_algorithm.so:system/vendor/lib64/libmmcamera2_stats_algorithm.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib64/libmorpho_panorama_gp.so:system/vendor/lib64/libmorpho_panorama_gp.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libmm-color-convertor.so:system/vendor/lib64/libmm-color-convertor.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libmmosal.so:system/vendor/lib64/libmmosal.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
@@ -919,7 +925,9 @@ PRODUCT_PACKAGES += \
     QtiTetherService \
     ims \
     imssettings \
+    libavenhancements \
     libmdmdetect \
+    libmmparser_lite \
     libtime_genoff
 
 $(call inherit-product, vendor/qcom/binaries/msm8992/graphics/graphics-vendor.mk)
