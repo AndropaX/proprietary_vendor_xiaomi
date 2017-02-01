@@ -70,6 +70,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
     vendor/xiaomi/libra/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
     vendor/xiaomi/libra/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
+    vendor/xiaomi/libra/proprietary/etc/firmware/wcd9320/wcd9320_anc.bin:system/etc/firmware/wcd9320/wcd9320_anc.bin \
+    vendor/xiaomi/libra/proprietary/etc/firmware/wcd9320/wcd9320_mad_audio.bin:system/etc/firmware/wcd9320/wcd9320_mad_audio.bin \
+    vendor/xiaomi/libra/proprietary/etc/firmware/wcd9320/wcd9320_mbhc.bin:system/etc/firmware/wcd9320/wcd9320_mbhc.bin \
     vendor/xiaomi/libra/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
     vendor/xiaomi/libra/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
     vendor/xiaomi/libra/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
@@ -631,6 +634,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/libdrc.so:system/vendor/lib/libdrc.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
@@ -786,6 +790,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libqcmaputils.so:system/vendor/lib/libqcmaputils.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/libqct_resampler.so:system/vendor/lib/libqct_resampler.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
