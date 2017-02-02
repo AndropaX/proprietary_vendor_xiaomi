@@ -119,6 +119,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/xiaomi/libra/proprietary/etc/android_model_facea.dat:system/etc/android_model_facea.dat \
     vendor/xiaomi/libra/proprietary/etc/android_model_faceg.dat:system/etc/android_model_faceg.dat \
+    vendor/xiaomi/libra/proprietary/etc/listen_platform_info.xml:system/etc/listen_platform_info.xml \
     vendor/xiaomi/libra/proprietary/etc/people_gender.dat:system/etc/people_gender.dat \
     vendor/xiaomi/libra/proprietary/etc/watermark_font_2300_3199.dat:system/etc/watermark_font_2300_3199.dat \
     vendor/xiaomi/libra/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
@@ -241,6 +242,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/libkmcrypto.so:system/vendor/lib64/libkmcrypto.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib64/liblistenjni.so:system/vendor/lib64/liblistenjni.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/liblistensoundmodel2.so:system/vendor/lib64/liblistensoundmodel2.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
@@ -695,6 +697,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libkmcrypto.so:system/vendor/lib/libkmcrypto.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/liblistenjni.so:system/vendor/lib/liblistenjni.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/liblistensoundmodel2.so:system/vendor/lib/liblistensoundmodel2.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libmdsprpc.so:system/vendor/lib/libmdsprpc.so \
