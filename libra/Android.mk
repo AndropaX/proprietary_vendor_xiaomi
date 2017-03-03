@@ -7882,4 +7882,7 @@ LOCAL_PROPRIETARY_MODULE := true
 LOCAL_SHARED_LIBRARIES := libcutils libthermalioctl liblog libdl libqti-perfd-client libcrypto libssl libqmi_cci libqmi_common_so libc++ libc libm
 include $(BUILD_PREBUILT)
 
+$(shell mkdir -p $(PRODUCT_OUT)/system/vendor/lib/egl && pushd $(PRODUCT_OUT)/system/vendor/lib > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
+$(shell mkdir -p $(PRODUCT_OUT)/system/vendor/lib64/egl && pushd $(PRODUCT_OUT)/system/vendor/lib64 > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
+
 endif
