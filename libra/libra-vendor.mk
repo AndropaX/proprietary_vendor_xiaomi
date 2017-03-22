@@ -140,7 +140,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so
 
 # Drm support
-PRODUCT_PACKAGES += \
+PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/lib/libjni_resource_drm.so:system/lib/libjni_resource_drm.so \
     vendor/xiaomi/libra/proprietary/lib64/libjni_resource_drm.so:system/lib64/libjni_resource_drm.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
