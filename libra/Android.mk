@@ -413,7 +413,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_PROPRIETARY_MODULE := true
-LOCAL_SHARED_LIBRARIES := libgsl libcutils libutils libc++ libdl libc libm
+LOCAL_SHARED_LIBRARIES := libcutils libutils libc++ libdl libc libm
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -1323,7 +1323,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_PROPRIETARY_MODULE := true
-LOCAL_SHARED_LIBRARIES := libgsl libCB libdl libcutils libc++ libc libm
+LOCAL_SHARED_LIBRARIES := libdl libcutils libc++ libc libm
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -1794,18 +1794,18 @@ LOCAL_PROPRIETARY_MODULE := true
 LOCAL_SHARED_LIBRARIES := libutils libcutils libdiag liblog libQSEEComAPI libc++ libdl libc libm
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := libsubsystem_control
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libsubsystem_control.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libsubsystem_control.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_PROPRIETARY_MODULE := true
-LOCAL_SHARED_LIBRARIES := libc libcutils libqmi_cci libqmi_common_so libmdmdetect libperipheral_client libc++ libdl libm
-include $(BUILD_PREBUILT)
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := libsubsystem_control
+#LOCAL_MODULE_OWNER := xiaomi
+#LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libsubsystem_control.so
+#LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libsubsystem_control.so
+#LOCAL_MULTILIB := both
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+#LOCAL_MODULE_SUFFIX := .so
+#LOCAL_PROPRIETARY_MODULE := true
+#LOCAL_SHARED_LIBRARIES := libc libcutils libqmi_cci libqmi_common_so libmdmdetect libperipheral_client libc++ libdl libm
+#include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libsystem_health_mon
@@ -2174,8 +2174,9 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := sound_trigger.primary.msm8992
 LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/vendor/lib/hw/sound_trigger.primary.msm8992.so
-LOCAL_MULTILIB := 32
+LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/hw/sound_trigger.primary.msm8992.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/hw/sound_trigger.primary.msm8992.so
+LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
@@ -7677,15 +7678,15 @@ LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_SHARED_LIBRARIES := libutils libcutils libdsutils libc++ libdl libc libm
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := qcom-system-daemon
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/bin/qcom-system-daemon
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SHARED_LIBRARIES := libc libcutils libutils libdiag libxml2 libsubsystem_control libc++ libdl libm
-include $(BUILD_PREBUILT)
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := qcom-system-daemon
+#LOCAL_MODULE_OWNER := xiaomi
+#LOCAL_SRC_FILES := proprietary/bin/qcom-system-daemon
+#LOCAL_MULTILIB := 64
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_CLASS := EXECUTABLES
+#LOCAL_SHARED_LIBRARIES := libc libcutils libutils libdiag libxml2 libsubsystem_control libc++ libdl libm
+#include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := qmuxd
@@ -7737,35 +7738,35 @@ LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_SHARED_LIBRARIES := libqmi_csi libqmi_common_so libcutils libc++ libdl libc libm
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := ssr_diag
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/bin/ssr_diag
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SHARED_LIBRARIES := libdiag libcutils libutils libc++ libdl libc libm
-include $(BUILD_PREBUILT)
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := ssr_diag
+#LOCAL_MODULE_OWNER := xiaomi
+#LOCAL_SRC_FILES := proprietary/bin/ssr_diag
+#LOCAL_MULTILIB := 64
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_CLASS := EXECUTABLES
+#LOCAL_SHARED_LIBRARIES := libdiag libcutils libutils libc++ libdl libc libm
+#include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := ssr_setup
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/bin/ssr_setup
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SHARED_LIBRARIES := libc libcutils libutils libmdmdetect libc++ libdl libm
-include $(BUILD_PREBUILT)
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := ssr_setup
+#LOCAL_MODULE_OWNER := xiaomi
+#LOCAL_SRC_FILES := proprietary/bin/ssr_setup
+#LOCAL_MULTILIB := 64
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_CLASS := EXECUTABLES
+#LOCAL_SHARED_LIBRARIES := libc libcutils libutils libmdmdetect libc++ libdl libm
+#include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := subsystem_ramdump
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/bin/subsystem_ramdump
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_SHARED_LIBRARIES := libmdmdetect libcutils libutils libc++ libdl libc libm
-include $(BUILD_PREBUILT)
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := subsystem_ramdump
+#LOCAL_MODULE_OWNER := xiaomi
+#LOCAL_SRC_FILES := proprietary/bin/subsystem_ramdump
+#LOCAL_MULTILIB := 64
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_CLASS := EXECUTABLES
+#LOCAL_SHARED_LIBRARIES := libmdmdetect libcutils libutils libc++ libdl libc libm
+#include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := tftp_server
