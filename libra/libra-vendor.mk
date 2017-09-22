@@ -158,6 +158,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/hw/gatekeeper.msm8992.so:system/vendor/lib/hw/gatekeeper.msm8992.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/hw/keystore.msm8992.so:system/vendor/lib/hw/keystore.msm8992.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib/hw/sound_trigger.primary.msm8992.so:system/vendor/lib/hw/sound_trigger.primary.msm8992.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/hw/vulkan.msm8992.so:system/vendor/lib/hw/vulkan.msm8992.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
     vendor/xiaomi/libra/proprietary/vendor/lib/lib-ims-rcscmjni.so:system/vendor/lib/lib-ims-rcscmjni.so \
@@ -527,6 +528,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/libra/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/hw/gatekeeper.msm8992.so:system/vendor/lib64/hw/gatekeeper.msm8992.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/hw/keystore.msm8992.so:system/vendor/lib64/hw/keystore.msm8992.so \
+    vendor/xiaomi/libra/proprietary/vendor/lib64/hw/sound_trigger.primary.msm8992.so:system/vendor/lib64/hw/sound_trigger.primary.msm8992.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/hw/vulkan.msm8992.so:system/vendor/lib64/hw/vulkan.msm8992.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
     vendor/xiaomi/libra/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
